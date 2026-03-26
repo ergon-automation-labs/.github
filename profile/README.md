@@ -4,7 +4,7 @@
 
 Ergon is a personal automation platform built around one idea: humans have finite attention, and the systems around them should respect that.
 
-The flagship project is **Bot Army** — a 45+ repo distributed operating system that routes information to the right surface at the right moment, built on Elixir/BEAM, NATS, SaltStack, and a schema-first design philosophy.
+The flagship project is **Bot Army** — a 55+ repo distributed operating system that routes information to the right surface at the right moment, built on Elixir/BEAM, NATS, SaltStack, and a schema-first design philosophy.
 
 ---
 
@@ -93,6 +93,21 @@ The full Salt → Jenkins → NATS → TUI chain is live. GTD Bot is deployed as
 A gamified knowledge engine built into Bot Army via the Terrain admin layer. Concept: a deck-builder where knowledge cards degrade if ignored and rebel, boss encounters require deploying your deck, and AI contestants provide atmosphere and can answer incorrectly as a teaching mechanic.
 
 Current exploration: real estate vertical as a validation path, with compliance training (HIPAA, OSHA) as a potential B2B platform play.
+
+---
+
+## Available Resources
+
+**Public Distributions:**
+- **[portable_job_applications](https://github.com/ergon-automation-labs/portable_job_applications)** — Self-hosted job search stack with resume matching, recruiter triage, and recommendation scoring. Docker Compose, zero cloud dependency.
+- **[portable_job_applications_tui](https://github.com/ergon-automation-labs/portable_job_applications_tui)** — Terminal UI for the job search system (TUI for GTD-style job tracking)
+- **[portable_llm_proxy](https://github.com/ergon-automation-labs/portable_llm_proxy)** — NATS-native LLM router for multi-provider request distribution
+
+**Monitoring & Transparency:**
+- **[public_view](https://github.com/ergon-automation-labs/public_view)** — Real-time build and deployment metrics. See what's being worked on, what shipped, and system health status.
+
+**Following the Build:**
+- [YouTube (@AbbyMalson3)](https://www.youtube.com/@AbbyMalson3) — Deep dives on design decisions and live building sessions
 
 ---
 

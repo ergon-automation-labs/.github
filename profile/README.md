@@ -22,11 +22,12 @@ Most AI systems make this worse. Ergon collapses the decision space.
 
 ## Try It (60 seconds)
 
+### One-Click Install (Recommended)
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ergon-automation-labs/ergon-starter/main/install.sh | bash
 ```
 
-That's it. You'll get:
+You'll get:
 - **8 core agents** (GTD, Para, Skills, Dispatcher, Synapse, Bridge, LLM, Job Scheduler)
 - **PostgreSQL + NATS** (self-contained, local)
 - **Web UI + CLI** (see what the system knows about your priorities)
@@ -34,13 +35,17 @@ That's it. You'll get:
 
 Takes ~2 minutes. Fully local. No accounts, no tracking.
 
-### Want to Customize?
-Everything is open source. Add agents for your domains. Modify prioritization logic. Deploy on your infrastructure.
+**Full docs:** [ergon-starter](https://github.com/ergon-automation-labs/ergon-starter) — Multi-pack Docker orchestrator with customization options
+
+### Want to Build Your Own Bot?
+Everything is open source. Start with the minimal template and build from there.
 
 ```bash
 git clone https://github.com/ergon-automation-labs/ergon-bot-minimal my-bot
 cd my-bot && make setup
 ```
+
+**Full guide:** [ergon-bot-minimal](https://github.com/ergon-automation-labs/ergon-bot-minimal) — 10-minute learning template with full documentation
 
 ---
 

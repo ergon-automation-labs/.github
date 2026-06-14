@@ -5,6 +5,8 @@ Ergon Automation Labs
 
 **Bot Army** is a Personal AI Operating System — 32+ public specialist agents that understand when you're focused and know when to interrupt.
 
+12 core bots are production-ready. 20+ optional/experimental bots cover specific domains (learning, fitness, research, etc). [See bot maturity status →](./BOT_STATUS.md)
+
 Unlike every other AI system, Ergon respects attention scarcity. No noise. No endless notifications. Just the information that actually matters, when you're ready for it.
 
 ### The Core Problem We Solve

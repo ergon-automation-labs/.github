@@ -152,3 +152,15 @@ Closed AI systems optimize for vendor growth, not user attention. We built this 
 When your decision space is infinite, you spend cognitive energy just deciding what to decide about. Ergon's job is to narrow that down to the few options that actually matter, gather the context you need, and get out of the way so you can move.
 
 It's not about doing more. It's about doing what matters.
+
+---
+
+## Bot Maturity & Stability
+
+The 32+ public agents fall into three categories:
+
+- **✅ Production** (12 core bots) — Foundation of the system, actively maintained, fully integrated
+- **🟡 Stable** (10+ optional bots) — Tested, working, solving real problems, less actively updated
+- **🔵 Experimental** (10+ bots) — Proving patterns, great for learning, community contributions welcome
+
+**Full breakdown:** [BOT_STATUS.md](./BOT_STATUS.md)

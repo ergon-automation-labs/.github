@@ -177,6 +177,41 @@ NATS messaging means you can:
 
 Example: A custom bot that watches fitness data and adjusts task recommendations.
 
+### Real-World Examples
+
+**Enterprise Platform Teams:**
+```
+Your Service Mesh (Kubernetes API, Consul, CMDB)
+    ↓
+Custom Topology Bot (maps services, ownership, dependencies)
+    ↓
+Graph DB (PostgreSQL + Apache AGE)
+    ↓
+Decision Bots (blast radius analysis, deployment coordination)
+    ↓
+Platform Teams ("Can I safely merge this? Who needs to know?")
+```
+
+**SRE On-Call:**
+```
+PagerDuty / Alertmanager
+    ↓
+Custom Incident Responder Bot (gather context automatically)
+    ↓
+Log Aggregation + Service Graph
+    ↓
+Decision Layer (blast radius, recent changes, who's the expert)
+    ↓
+On-Call Engineer ("What happened and what do I do?")
+```
+
+The architecture supports these because:
+- **Graph DB (Apache AGE)** stores topology, dependencies, ownership
+- **Semantic search (pgvector)** finds relevant logs, runbooks, past incidents
+- **Extensibility** means you write bots specific to your stack
+- **NATS messaging** decouples your custom bots from core system
+- **Full source code** means you can audit and modify for compliance
+
 ---
 
 ## Deployment Models

@@ -75,6 +75,22 @@ It runs on your machine, learns your patterns, and integrates with your existing
 - People skeptical of closed AI ecosystems
 - Problem: "Most AI platforms are black boxes. I want something I can understand and extend."
 
+### Enterprise: Platform Teams & Architecture Leads
+- Large organizations with 10s-100s of services, complex dependencies
+- Juggling not 50 tasks but 50 *decision points* per task (blast radius, team coordination, contracts)
+- Currently using: Service meshes, CMDB, scattered runbooks, Slack for coordination
+- Problem: "I have full architecture visibility but no way to synthesize it into fast decisions under coordination complexity"
+- **Status**: Core architecture supports this. Needs: service mesh graph mapping, team/ownership metadata, deployment coordination bots
+- **How to help**: [Build a topology mapper](https://github.com/ergon-automation-labs) that reads your CMDB and syncs to Ergon's graph DB. Show other platform teams how you did it. [Open an issue](https://github.com/ergon-automation-labs/ergon-bot-minimal/issues) to discuss.
+
+### SREs / On-Call Engineers
+- Paged at 2 AM with sparse context, 5 minutes to decide (rollback? patch? wait?)
+- Current state: Grepping logs, checking dashboards, trying to remember who wrote this service
+- Currently using: PagerDuty, monitoring tools, tribal knowledge, runbooks
+- Problem: "I need to gather context and make a decision *right now*, but I'm context-switching across 5+ systems"
+- **Status**: Core architecture supports incident response. Needs: log aggregation bot, incident responder (gathers context automatically), blast radius analyzer, runbook/decision support
+- **How to help**: [Build an incident responder](https://github.com/ergon-automation-labs) that integrates with your incident management tool (PagerDuty, Opsgenie). Map your services and show the blast radius. [Open an issue](https://github.com/ergon-automation-labs/ergon-bot-minimal/issues) to discuss patterns.
+
 ---
 
 ## Messaging Framework
@@ -142,6 +158,50 @@ Closed AI systems optimize for vendor growth, not user attention. We built this 
 | Task Management Tools (Linear, Notion) | Well-designed UI | Intelligent prioritization, proactive info gathering |
 | Automation Frameworks (IFTTT, Zapier) | Simple integrations | Full control, extensible, respectful of human judgment |
 | Agentic AI (AutoGPT, LangChain frameworks) | Powerful abstractions | Finite attention awareness, designed for realistic workflows |
+
+---
+
+## Enterprise & SRE: Invitation to Contribute
+
+We've built Ergon for individual knowledge workers. **We haven't yet built for enterprise platform teams or SRE on-call workflows.** But the architecture supports it. If you need it, we'd love for you to build it:
+
+### Enterprise Platform Teams
+**The problem you face:** At scale, decision complexity explodes. You're not deciding "what should I work on" — you're deciding "given 10 service dependencies, team ownership, deployment windows, and contract boundaries, what can I change safely?"
+
+**What's needed:**
+- Service topology mapper (read from your CMDB/service mesh → populate Ergon's graph DB)
+- Ownership/team metadata (who owns what service, who's on-call, team capacity)
+- Deployment coordination bot (track deployment windows across regions, prevent unsafe parallel deploys)
+- Change impact analyzer (given a code change, what services break, who needs to know)
+
+**How to build it:**
+1. Fork [ergon-bot-minimal](https://github.com/ergon-automation-labs/ergon-bot-minimal)
+2. Connect to your service mesh (Kubernetes API, Consul, your CMDB)
+3. Build a bot that syncs topology to Ergon's PostgreSQL + Apache AGE graph database
+4. Write decision bots that query the graph
+5. Share your architecture — other platform teams will use it
+
+**[Open an issue](https://github.com/ergon-automation-labs/ergon-bot-minimal/issues)** to discuss patterns. We'll help you integrate.
+
+### SREs / On-Call Engineers
+**The problem you face:** Paged at 2 AM with sparse context. You have 5 minutes to decide. You're context-switching across logs, dashboards, deployment history, runbooks, and tribal knowledge.
+
+**What's needed:**
+- Incident responder bot (get paged → automatically gather relevant context)
+- Log aggregation bot (search logs across all services, surfaces top errors)
+- Blast radius analyzer (this service affects what downstream, who's the expert)
+- Runbook/decision support (not autopilot — surface your options and reasoning)
+- Team signal (who's on-call for dependent services, who has context)
+
+**How to build it:**
+1. Fork [ergon-bot-minimal](https://github.com/ergon-automation-labs/ergon-bot-minimal)
+2. Integrate with your incident management tool (PagerDuty, Opsgenie, Alertmanager)
+3. Build a bot that responds to incidents by gathering context: recent deploys, affected services, related alerts
+4. Connect it to your logs (Datadog, ELK, Loki) and dashboards (Prometheus, Grafana)
+5. Map your services so blast radius analysis works
+6. Share your runbooks — other on-call engineers will benefit
+
+**[Open an issue](https://github.com/ergon-automation-labs/ergon-bot-minimal/issues)** to discuss patterns. We'll help you build it.
 
 ---
 

@@ -124,6 +124,15 @@ You can run everything public or deploy privately on your own infrastructure.
 **Want the full positioning statement?** → [Read POSITIONING.md](./POSITIONING.md)  
 *Messaging framework, target personas, what makes this different*
 
+**Enterprise Platform Teams?** → [ENTERPRISE_ADOPTION_GUIDE.md](./ENTERPRISE_ADOPTION_GUIDE.md)  
+*4-phase guide: map your services, build decision bots, integrate with your CI/CD*
+
+**SREs / On-Call Engineers?** → [SRE_ADOPTION_GUIDE.md](./SRE_ADOPTION_GUIDE.md)  
+*Build an incident responder that gathers context automatically (30-second context instead of 10 minutes)*
+
+**Want to contribute?** → [Read CONTRIBUTING.md](./CONTRIBUTING.md)  
+*How to build bots, propose features, integrate with your infrastructure*
+
 ---
 
 ## Connect

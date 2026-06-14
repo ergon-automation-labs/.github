@@ -192,7 +192,7 @@ curl -fsSL https://raw.githubusercontent.com/ergon-automation-labs/ergon-starter
 ```
 
 This gives you:
-- Core pack (8 essential agents)
+- Core pack (12 essential agents) + 5 optional packs (20+ additional agents)
 - PostgreSQL + NATS (self-contained Docker)
 - Web UI + CLI access
 - Sample data to explore

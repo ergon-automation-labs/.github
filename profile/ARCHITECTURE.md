@@ -21,14 +21,14 @@
 │                  DOMAIN AGENTS (18+)                            │
 │                                                                  │
 │  ┌────────────────────────────────────────────────────────┐    │
-│  │ Work Agents                │ Life Agents              │    │
-│  │ ─ GTD (tasks/projects)     │ ─ Fitness               │    │
-│  │ ─ Skills (knowledge base)  │ ─ Learning              │    │
-│  │ ─ Para (note organization) │ ─ Chore management      │    │
-│  │ ─ Job Applications         │ ─ Wife Care             │    │
-│  │ ─ Internal Docs            │ ─ Calendar              │    │
-│  │ ─ LLM Operations           │ ─ Weather               │    │
-│  │ ─ Job Scheduler            │ ─ Outcomes Recorder     │    │
+│  │ 32+ Public Agents                                      │    │
+│  │ Core Pack (12): GTD, Para, Skills, Dispatcher,        │    │
+│  │ Synapse, Bridge, LLM, Job Scheduler, MCP, General,    │    │
+│  │ Graphify Cache, Elixir Tools                          │    │
+│  │                                                        │    │
+│  │ Optional Packs (20+): YouTube Manager, Media,         │    │
+│  │ Terrain, Internal Docs, Fitness, Chore, RPG,         │    │
+│  │ Feeds, RSS, Job Applications, and more…              │    │
 │  └────────────────────────────────────────────────────────┘    │
 └────────────┬──────────────────────────────────────────────────────┘
              │

@@ -28,7 +28,7 @@ Most AI systems make this worse. They add more notifications, more options, more
 ## Core Positioning
 
 ### What It Is
-A **distributed personal AI operating system** (18+ specialist agents on Elixir/OTP + NATS) designed for **decision support, not decision automation.**
+A **distributed personal AI operating system** (32+ public specialist agents on Elixir/OTP + NATS, 12 in core pack) designed for **decision support, not decision automation.**
 
 It runs on your machine, learns your patterns, and integrates with your existing tools (Claude Desktop, Cursor via MCP, your text editor).
 

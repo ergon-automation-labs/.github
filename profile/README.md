@@ -3,7 +3,7 @@ Ergon Automation Labs
 
 ## Your Attention is Finite. Treat It Like a Scarce Resource.
 
-**Bot Army** is a Personal AI Operating System — 18+ specialist agents that understand when you're focused and know when to interrupt.
+**Bot Army** is a Personal AI Operating System — 32+ public specialist agents that understand when you're focused and know when to interrupt.
 
 Unlike every other AI system, Ergon respects attention scarcity. No noise. No endless notifications. Just the information that actually matters, when you're ready for it.
 
@@ -28,7 +28,8 @@ curl -fsSL https://raw.githubusercontent.com/ergon-automation-labs/ergon-starter
 ```
 
 You'll get:
-- **8 core agents** (GTD, Para, Skills, Dispatcher, Synapse, Bridge, LLM, Job Scheduler)
+- **12 core agents** (GTD, Para, Skills, Dispatcher, Synapse, Bridge, LLM, Job Scheduler, MCP, General, Graphify Cache, Elixir Tools)
+- **5 optional packs** (Social Media, Learning, Areas, Research) — 20+ additional bots available
 - **PostgreSQL + NATS** (self-contained, local)
 - **Web UI + CLI** (see what the system knows about your priorities)
 - **Sample data** (explore how it works)
